@@ -1,4 +1,4 @@
-// 2. Clone merge
+// 3. Clone merge
 
 const author = {
     name: 'JRR',

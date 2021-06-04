@@ -5,22 +5,24 @@ const path = require('path');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   entry: {
-    app: './index.js', 
+    app: './index.jsx', 
     appStyles: [
-      './mystyles.scss',
+      './mystyles.scss', './averageComponentStyles.scss',
     ],
     vendorStyles: ['../node_modules/bootstrap/dist/css/bootstrap.css'],
   },
   output: {
     filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "./",
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
       },

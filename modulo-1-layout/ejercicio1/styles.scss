@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+.container-1, .container-2, .container-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-1 > div {
+    background-color: $base-color;
+}
+
+.box{
+    width: $width-size;
+    height: $heigth-size;
+    border: $border-size $border-color solid;
+    // background-color: $base-color;
+} 
+
+.box span{
+    color: $text-color;
+}
+
+.darken-1 {
+    background-color: darken($base-color, 10%);
+}
+
+.darken-2 {
+    background-color: darken($base-color, 20%);
+}
+
+.darken-3 {
+    background-color: darken($base-color, 30%);
+}
+
+.darken-4 {
+    background-color: darken($base-color, 40%);
+}
+
+.lighten-1 {
+    background-color: lighten($base-color, 10%);
+}
+
+.lighten-2 {
+    background-color: lighten($base-color, 20%);
+}
+
+.lighten-3 {
+    background-color: lighten($base-color, 30%);
+}
+
+.lighten-4 {
+    background-color: lighten($base-color, 40%);
+}

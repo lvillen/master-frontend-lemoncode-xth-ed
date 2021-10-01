@@ -5,6 +5,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (C-137)",
       "url": "https://rickandmortyapi.com/api/location/1"
@@ -67,6 +68,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (C-137)",
       "url": "https://rickandmortyapi.com/api/location/1"
@@ -129,6 +131,7 @@
   "species": "Human",
   "type": "",
   "gender": "Female",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (Replacement Dimension)",
       "url": "https://rickandmortyapi.com/api/location/20"
@@ -183,6 +186,7 @@
   "species": "Human",
   "type": "",
   "gender": "Female",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (Replacement Dimension)",
       "url": "https://rickandmortyapi.com/api/location/20"
@@ -237,6 +241,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (Replacement Dimension)",
       "url": "https://rickandmortyapi.com/api/location/20"
@@ -287,6 +292,7 @@
   "species": "Alien",
   "type": "",
   "gender": "Female",
+  "bestSentences": [""],
   "origin": {
       "name": "Abadango",
       "url": "https://rickandmortyapi.com/api/location/2"
@@ -309,6 +315,7 @@
   "species": "Human",
   "type": "Genetic experiment",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (Replacement Dimension)",
       "url": "https://rickandmortyapi.com/api/location/20"
@@ -332,6 +339,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -354,6 +362,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (Replacement Dimension)",
       "url": "https://rickandmortyapi.com/api/location/20"
@@ -376,6 +385,7 @@
   "species": "Human",
   "type": "Superhuman (Ghost trains summoner)",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -398,6 +408,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (C-137)",
       "url": "https://rickandmortyapi.com/api/location/1"
@@ -420,6 +431,7 @@
   "species": "Human",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (C-137)",
       "url": "https://rickandmortyapi.com/api/location/1"
@@ -442,6 +454,7 @@
   "species": "Alien",
   "type": "",
   "gender": "unknown",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -464,6 +477,7 @@
   "species": "Alien",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -486,6 +500,7 @@
   "species": "Alien",
   "type": "",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -508,6 +523,7 @@
   "species": "Alien",
   "type": "Parasite",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -530,6 +546,7 @@
   "species": "Human",
   "type": "",
   "gender": "Female",
+  "bestSentences": [""],
   "origin": {
       "name": "Earth (C-137)",
       "url": "https://rickandmortyapi.com/api/location/1"
@@ -552,6 +569,7 @@
   "species": "Human",
   "type": "Human with antennae",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -575,6 +593,7 @@
   "species": "Human",
   "type": "Human with antennae",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""
@@ -597,6 +616,7 @@
   "species": "Human",
   "type": "Human with ants in his eyes",
   "gender": "Male",
+  "bestSentences": [""],
   "origin": {
       "name": "unknown",
       "url": ""

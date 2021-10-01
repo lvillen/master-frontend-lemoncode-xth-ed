@@ -3,6 +3,7 @@ export interface Character {
   name: string;
   status: string;
   species: string;
+  bestSentences: string[];
   url: string;
 }
 
@@ -11,6 +12,7 @@ export const createEmptyCharacter = (): Character => ({
   name: '',
   status: '',
   species: '',
+  bestSentences: [''],
   url: '',
 });
 

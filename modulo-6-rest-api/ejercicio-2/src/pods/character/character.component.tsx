@@ -26,6 +26,7 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
       <ul>
         <li>Status: {character.status}</li>
         <li>Species: {character.species}</li>
+        <li>Best Sentences: {character.bestSentences}</li>
         <li>Url: {character.url}</li>
       </ul>
     </>

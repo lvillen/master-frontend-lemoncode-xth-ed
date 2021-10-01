@@ -3,7 +3,7 @@ import { Lookup } from 'common/models';
 
 const axios = require('axios');
 
-const url = "https://rickandmortyapi.com/api/character/";
+const url = "/api/characters/";
 
 export const getCharacter = async (id: string): Promise<Character> => {
   return axios.get(`${url}${id}`)

@@ -13,12 +13,11 @@ import { Lookup } from 'common/models';
 
 interface Props {
   character: Character;
-  // onSave: (character: Character) => void;
+  onSave: (character: Character) => void;
 }
 
 export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
-  const { character } = props;
-  // const { character, onSave } = props;
+  const { character, onSave } = props;
 
   return (
     <>
@@ -29,31 +28,23 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
         <li>Best Sentences: {character.bestSentences}</li>
         <li>Url: {character.url}</li>
       </ul>
+      <Formik
+        onSubmit={console.log}
+        initialValues={character}
+        enableReinitialize={true}
+        validate={formValidation.validateForm}
+      >
+        {() => (
+          <Form className={classes.root}>
+            <TextFieldComponent name="best-sentences" label="best-sentences" />
+            <Button type="submit" variant="contained" color="primary">
+              Save
+            </Button>
+          </Form>
+        )}
+      </Formik>
     </>
-    // <Formik
-    //   onSubmit={console.log}
-    //   initialValues={character}
-    //   enableReinitialize={true}
-    //   validate={formValidation.validateForm}
-    // >
-    //   {() => (
-    //     <Form className={classes.root}>
-    //       <TextFieldComponent name="name" label="Name" />
-    //       <TextFieldComponent name="address" label="Address" />
-    //       <RatingComponent name="rating" max={5} />
-    //       {/* <SelectComponent name="city" label="City" items={cities} /> */}
-    //       <TextFieldComponent
-    //         name="description"
-    //         label="Description"
-    //         multiline={true}
-    //         rows={3}
-    //         rowsMax={5}
-    //       />
-    //       <Button type="submit" variant="contained" color="primary">
-    //         Save
-    //       </Button>
-    //     </Form>
-    //   )}
-    // </Formik>
   );
 };
+
+//Falta el onClick

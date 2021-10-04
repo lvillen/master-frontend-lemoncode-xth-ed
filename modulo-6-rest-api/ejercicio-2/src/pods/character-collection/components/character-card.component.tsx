@@ -38,7 +38,7 @@ export const CharacterCard: React.FunctionComponent<Props> = (props) => {
         </div>
       </CardContent>
       <CardActions>
-        <IconButton onClick={() => onEdit(character.id)}>
+        <IconButton onClick={() => onEdit(character.id.toString())}>
           <EditIcon />
         </IconButton>
       </CardActions>

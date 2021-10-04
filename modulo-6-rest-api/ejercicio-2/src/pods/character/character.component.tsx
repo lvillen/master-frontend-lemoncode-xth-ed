@@ -29,14 +29,14 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
         <li>Url: {character.url}</li>
       </ul>
       <Formik
-        onSubmit={console.log}
+        onSubmit={onSave}
         initialValues={character}
         enableReinitialize={true}
         validate={formValidation.validateForm}
       >
         {() => (
           <Form className={classes.root}>
-            <TextFieldComponent name="best-sentences" label="best-sentences" />
+            <TextFieldComponent name="bestSentences" label="bestSentences" />
             <Button type="submit" variant="contained" color="primary">
               Save
             </Button>

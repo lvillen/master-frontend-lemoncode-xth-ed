@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 
 export const DetailPage: React.FC = () => {
-  const { id } = useParams(); //<{id: string}>
+  const { id } = useParams<{id: string}>();
 
   return (
     <>

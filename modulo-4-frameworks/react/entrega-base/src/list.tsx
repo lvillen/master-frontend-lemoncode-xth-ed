@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, generatePath } from "react-router-dom";
+import { OrganizationContext } from "./organization.context";
 
 interface MemberEntity {
   id: string;
@@ -9,7 +10,8 @@ interface MemberEntity {
 
 export const ListPage: React.FC = () => {
   const [members, setMembers] = React.useState<MemberEntity[]>([]);
-  const [organization, setOrganization] = React.useState("lemoncode");
+  const {organization, setOrganization} = React.useContext(OrganizationContext);
+
 
   React.useEffect(() => {
     fetch(`https://api.github.com/orgs/${organization}/members`)

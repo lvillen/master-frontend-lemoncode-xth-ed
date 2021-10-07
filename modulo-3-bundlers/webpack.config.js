@@ -11,7 +11,7 @@ module.exports = {
   entry: {
     app: './index.jsx', 
     appStyles: [
-      './mystyles.scss', './averageComponentStyles.scss',
+      './mystyles.scss', 
     ],
     vendorStyles: ['../node_modules/bootstrap/dist/css/bootstrap.css'],
   },
@@ -31,7 +31,17 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                exportLocalsConvention: "camelCase",
+                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                localIdentContext: path.resolve(__dirname, 'src'),
+                localIdentHashPrefix: 'my-custom-hash',
+              }
+            },
+          },
           {
             loader: "sass-loader",
             options: {

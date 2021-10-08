@@ -1,10 +1,16 @@
 $background-color: teal;
+$hello-world-color: crimson;
 
 .red-background {
   background-color: $background-color;
 }
 
-img {
+.hello-world {
+  background-color: $hello-world-color;
+  color: white;
+}
+
+.img-position {
   display: block;
   width: 600px;
   padding: 20px;

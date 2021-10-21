@@ -1,6 +1,7 @@
 <template>
   <div class="organization">
     <h2>Me he creado</h2>
+    <input v-model="organization" />
     <ul>
       <li v-for="member in members" :key="member.id">
         <div class="flex align-items-center justify-content-start">
@@ -22,11 +23,12 @@ import { MemberEntity } from '@/services/api-model'
 export default defineComponent({
   data() {
     return {
+      organization: 'lemoncode',
       members: [] as MemberEntity[],
     }
   },
   async created() {
-    this.members = await getMembers()
+    this.members = await getMembers(this.organization)
   }
 })
 </script>

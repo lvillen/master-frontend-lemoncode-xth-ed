@@ -1,7 +1,9 @@
 <template>
   <div class="organization">
-    <h2>Me he creado</h2>
-    <input v-model="organization" />
+    <form>
+      <input v-model="organization" />
+      <button @click.prevent="updateMembers">Search</button>
+    </form>
     <ul>
       <li v-for="member in members" :key="member.id">
         <div class="flex align-items-center justify-content-start">
@@ -15,20 +17,34 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { getMembers } from '@/services/api-call'
-import { MemberEntity } from '@/services/api-model' 
+import { defineComponent } from "vue"
+import { getMembers } from "@/services/api-call"
+import { MemberEntity } from "@/services/api-model" 
 
 
 export default defineComponent({
   data() {
     return {
-      organization: 'lemoncode',
+      organization: "lemoncode",
       members: [] as MemberEntity[],
     }
   },
   async created() {
     this.members = await getMembers(this.organization)
+  },
+  methods: {
+    async updateMembers() {
+      this.members = await getMembers(this.organization)
+    }
+  },
+  watch: {
+    organization: function (organization, oldOrganization) {
+      oldOrganization = this.organization
+
+      if (organization !== oldOrganization) {
+        this.organization = organization
+      } 
+    }
   }
 })
 </script>
